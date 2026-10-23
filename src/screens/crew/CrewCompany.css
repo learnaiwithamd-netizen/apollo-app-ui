@@ -1,0 +1,151 @@
+.about-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.about-card__logo {
+  object-fit: contain;
+}
+
+.about-card__text {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.about-card__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 44px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.emergency-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--c-navy);
+  color: #fff;
+  text-decoration: none;
+}
+
+.emergency-line:hover {
+  background: var(--c-navy-raised);
+  color: #fff;
+}
+
+.emergency-line__icon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--c-sky);
+  color: var(--c-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emergency-line__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.emergency-line__title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.emergency-line__number {
+  font-size: 14px;
+  color: var(--c-on-navy-muted);
+}
+
+.emergency-line__call {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.offices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.office {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.office__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.office__name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.office__address {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--c-muted);
+}
+
+.office__actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.office__action {
+  font-size: 14px;
+}
+
+.benefits {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.benefit {
+  padding: 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.benefit__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.benefit__title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.benefit__body {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--c-muted);
+}

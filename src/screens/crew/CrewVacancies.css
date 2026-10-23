@@ -1,0 +1,42 @@
+.vacancies__count {
+  font-size: 14px;
+  color: var(--c-muted);
+}
+
+.vacancy {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vacancy__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.vacancy__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.vacancy__vessel {
+  font-size: 14px;
+  color: var(--c-muted);
+}
+
+.vacancy__sent {
+  height: 46px;
+  border-radius: 10px;
+  background: var(--ok-bg);
+  color: var(--ok-fg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+}

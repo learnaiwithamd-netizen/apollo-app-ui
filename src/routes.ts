@@ -1,0 +1,31 @@
+export const paths = {
+  signIn: '/',
+  crew: {
+    home: '/crew',
+    schedule: '/crew/schedule',
+    preJoining: '/crew/schedule/pre-joining',
+    training: '/crew/schedule/training',
+    joining: '/crew/schedule/joining',
+    flight: '/crew/schedule/joining/flight',
+    onboard: '/crew/schedule/onboard',
+    vacancies: '/crew/schedule/vacancies',
+    company: '/crew/schedule/company',
+    benefits: '/crew/schedule/company?tab=benefits',
+    documents: '/crew/documents',
+    circulars: '/crew/circulars',
+    profile: '/crew/profile',
+    talentMatrix: '/crew/profile/talent-matrix',
+    serviceRecord: '/crew/profile/service-record',
+  },
+  staff: {
+    home: '/staff',
+    approvals: '/staff/approvals',
+    crew: '/staff/crew',
+  },
+  console: {
+    planning: '/console/planning',
+    flights: '/console/flights',
+    training: '/console/training',
+    circulars: '/console/circulars',
+  },
+} as const;

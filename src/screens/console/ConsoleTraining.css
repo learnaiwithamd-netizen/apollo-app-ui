@@ -1,0 +1,77 @@
+.training-console__add {
+  padding: 0 16px;
+  gap: 8px;
+}
+
+.course-form,
+.assign {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.assign {
+  gap: 14px;
+}
+
+.course-form__pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.course-form__pair .btn {
+  min-width: 0;
+}
+
+.assign__audiences {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.assign__legend {
+  padding: 0;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--c-navy);
+}
+
+.audience-option {
+  min-height: 48px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--c-input-border);
+  background: var(--c-surface);
+  color: var(--c-ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.audience-option:hover {
+  border-color: var(--c-blue);
+}
+
+.audience-option.is-on {
+  border: 2px solid var(--c-blue);
+  padding: 7px 11px;
+  background: var(--c-selected);
+}
+
+.audience-option__label {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.audience-option__count {
+  font-size: 13px;
+  color: var(--c-muted);
+}

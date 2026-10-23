@@ -1,0 +1,133 @@
+.contract-hero {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  padding: 18px 20px 64px;
+  background: var(--c-navy);
+  color: #fff;
+}
+
+.contract-hero__waves {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+}
+
+.contract-hero__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contract-hero__eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-sky);
+}
+
+.contract-hero__vessel {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.contract-hero__facts {
+  gap: 8px;
+}
+
+.onboard-tiles {
+  position: relative;
+  margin-top: -44px;
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.onboard-tile {
+  min-height: 104px;
+  padding: 12px 8px;
+  border-radius: 16px;
+  border: 1px solid var(--c-border);
+  background: var(--c-surface);
+  color: var(--c-navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: var(--shadow-tile);
+  cursor: pointer;
+}
+
+.onboard-tile:hover {
+  border-color: var(--c-line-accent);
+}
+
+.onboard-tile.is-on {
+  border-color: var(--c-blue);
+  background: var(--c-blue);
+  color: #fff;
+}
+
+.onboard-tile__label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.onboard-panel {
+  margin: 16px 16px 24px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.onboard-panel .kv__row {
+  padding: 9px 0;
+}
+
+.onboard-panel__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.onboard-panel__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 56px;
+  border-bottom: 1px solid var(--c-divider-soft);
+}
+
+.onboard-panel__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.onboard-panel__title {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.onboard-panel__meta {
+  font-size: 13px;
+  color: var(--c-muted);
+}
+
+.onboard-panel__cta {
+  margin-top: 4px;
+}

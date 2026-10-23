@@ -1,0 +1,86 @@
+.progress {
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--c-border);
+  overflow: hidden;
+}
+
+.progress__fill {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--c-blue);
+}
+
+.progress--on-dark {
+  height: 5px;
+  background: var(--c-navy-track);
+}
+
+.progress--on-dark .progress__fill {
+  border-radius: 0;
+  background: var(--c-sky);
+}
+
+.notice {
+  padding: 14px;
+  border-radius: 12px;
+  background: var(--ok-bg);
+  color: var(--ok-fg);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.notice__title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.notice--sm {
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.sheet-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  background: var(--c-overlay);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.sheet {
+  background: var(--c-surface);
+  border-radius: 22px 22px 0 0;
+  padding: 10px 20px calc(var(--home-indicator) + 12px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sheet__handle {
+  align-self: center;
+  width: 40px;
+  height: 5px;
+  border-radius: 3px;
+  background: var(--c-line);
+}
+
+.sheet__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sheet__title {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--c-navy);
+}

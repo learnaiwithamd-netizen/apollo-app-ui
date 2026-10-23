@@ -1,0 +1,26 @@
+.flights__route {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-form__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.booking-done {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.booking-done__facts {
+  gap: 12px;
+}

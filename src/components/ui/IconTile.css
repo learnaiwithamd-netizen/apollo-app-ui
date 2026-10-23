@@ -1,0 +1,59 @@
+.icon-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-tile--lg {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+}
+
+.icon-tile--md {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.icon-tile--sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.icon-tile--xs {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.icon-tile--round {
+  border-radius: 50%;
+}
+
+.icon-tile--ok {
+  background: var(--ok-bg);
+  color: var(--ok-fg);
+}
+
+.icon-tile--warn {
+  background: var(--warn-bg);
+  color: var(--warn-fg);
+}
+
+.icon-tile--bad {
+  background: var(--bad-bg);
+  color: var(--bad-fg);
+}
+
+.icon-tile--info {
+  background: var(--info-bg);
+  color: var(--info-fg);
+}
+
+.icon-tile--sky {
+  background: var(--sky-bg);
+  color: var(--sky-fg);
+}
