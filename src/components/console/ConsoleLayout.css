@@ -1,0 +1,257 @@
+.console {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--c-bg);
+  color: var(--c-ink);
+}
+
+.console__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 24px;
+  background: var(--c-surface);
+  border-bottom: 1px solid var(--c-border);
+}
+
+.console__logo {
+  object-fit: contain;
+}
+
+.console__divider {
+  width: 1px;
+  height: 28px;
+  background: var(--c-preview-border);
+}
+
+.console__product {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c-navy);
+}
+
+.console__spacer {
+  flex: 1;
+}
+
+.console__search {
+  flex: 0 1 320px;
+  min-width: 200px;
+}
+
+.console__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.console__body {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.console__nav {
+  flex: 1 1 220px;
+  max-width: 100%;
+  padding: 20px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--c-navy);
+}
+
+.console__nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  color: var(--c-on-navy-link);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.console__nav-link:hover {
+  background: var(--c-navy-raised);
+  color: #fff;
+}
+
+.console__nav-link.is-active {
+  background: var(--c-blue);
+  color: #fff;
+  font-weight: 600;
+}
+
+.console__main {
+  flex: 999 1 560px;
+  min-width: 0;
+  padding: 28px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+@media (max-width: 640px) {
+  .console__main {
+    padding: 20px 16px 32px;
+  }
+}
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.page-header__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.page-header__title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.page-header__description {
+  font-size: 15px;
+  color: var(--c-muted);
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.split__primary {
+  flex: 999 1 560px;
+  min-width: 0;
+}
+
+.split__aside {
+  flex: 1 1 340px;
+  min-width: 0;
+}
+
+/* Aside card */
+.panel {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.panel-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.panel-heading__eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sky-fg);
+}
+
+.panel-heading__title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.panel-heading__meta {
+  font-size: 14px;
+  color: var(--c-muted);
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+  gap: 12px;
+}
+
+.kpi {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--c-surface);
+  border: 1px solid var(--c-border);
+  border-radius: 14px;
+}
+
+.kpi__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-muted);
+}
+
+.kpi__value {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.kpi__value--navy {
+  color: var(--c-navy);
+}
+
+.kpi__value--ok {
+  color: var(--ok-fg);
+}
+
+.kpi__value--bad {
+  color: var(--bad-fg);
+}
+
+.kpi__value--blue {
+  color: var(--c-blue);
+}
+
+/* Inline filter: small caps label wrapping a select. */
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-muted);
+}
+
+.filter select {
+  height: 40px;
+  min-width: 150px;
+  padding: 0 10px;
+  border: 1px solid var(--c-input-border);
+  border-radius: 10px;
+  background: var(--c-surface);
+  color: var(--c-ink);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}

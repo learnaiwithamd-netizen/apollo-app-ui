@@ -1,0 +1,60 @@
+/* Apollo design tokens: brand navy + blue with a sky accent, Barlow type. */
+:root {
+  --font-body: 'Barlow', system-ui, sans-serif;
+  --font-display: 'Barlow Semi Condensed', 'Barlow', sans-serif;
+
+  /* Brand */
+  --c-navy: #242463;
+  --c-navy-raised: #33337a;
+  --c-navy-track: #4a4a92;
+  --c-blue: #204191;
+  --c-blue-wave: #2b4fa3;
+  --c-sky: #25a9e0;
+
+  /* Text */
+  --c-ink: #1b1b3a;
+  --c-muted: #5a6079;
+  --c-subtle: #7a8099;
+  --c-on-navy: #ffffff;
+  --c-on-navy-muted: #c3caea;
+  --c-on-navy-link: #d5daf0;
+
+  /* Surfaces */
+  --c-bg: #f3f5fa;
+  --c-surface: #ffffff;
+  --c-surface-sunken: #f7f9fc;
+  --c-track: #eef1f7;
+  --c-selected: #eef3fd;
+  --c-stage: #e3e7ef;
+  --c-overlay: rgba(20, 20, 54, 0.55);
+
+  /* Lines */
+  --c-border: #e3e7f0;
+  --c-border-header: #e6e9f1;
+  --c-divider: #edf0f5;
+  --c-divider-soft: #f0f2f7;
+  --c-input-border: #cdd3e0;
+  --c-line: #d5dae5;
+  --c-line-inactive: #c3c9d8;
+  --c-line-accent: #c8d2ec;
+  --c-preview-border: #dde2ec;
+
+  /* Status tones: background / foreground pairs */
+  --ok-bg: #e5f4ec;
+  --ok-fg: #1c6b44;
+  --warn-bg: #fff3dc;
+  --warn-fg: #8a4b00;
+  --bad-bg: #fde9e7;
+  --bad-fg: #a8261b;
+  --info-bg: #e8eefa;
+  --info-fg: #204191;
+  --sky-bg: #e3f4fc;
+  --sky-fg: #0f5e80;
+
+  /* Bright status marks used on navy */
+  --c-ok-bright: #7fe0ae;
+  --c-ok-bright-ink: #0e3b25;
+  --c-warn-bright: #ffc870;
+
+  --shadow-tile: 0 2px 6px rgba(36, 36, 99, 0.08);
+}

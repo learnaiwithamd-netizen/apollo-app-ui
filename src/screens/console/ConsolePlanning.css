@@ -1,0 +1,55 @@
+.planning__book {
+  margin-top: 6px;
+  align-self: flex-start;
+  padding: 0 14px;
+}
+
+.candidates {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.candidates__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.candidate {
+  padding: 12px 14px;
+  border: 1px solid var(--c-border);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.candidate__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.candidate__who {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.candidate__name {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.candidate__meta {
+  font-size: 13px;
+  color: var(--c-muted);
+}
+
+.candidate__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}

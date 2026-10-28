@@ -1,0 +1,30 @@
+.tabbar {
+  flex-shrink: 0;
+  display: grid;
+  padding: 6px 8px calc(var(--home-indicator) + 6px);
+  background: var(--c-surface);
+  border-top: 1px solid var(--c-border-header);
+}
+
+.tabbar__item {
+  height: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border-radius: 12px;
+  color: var(--c-muted);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.tabbar__item:hover {
+  color: var(--c-navy);
+}
+
+.tabbar__item.is-active {
+  color: var(--c-blue);
+  font-weight: 700;
+}

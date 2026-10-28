@@ -1,0 +1,23 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.avatar--navy {
+  background: var(--c-navy);
+  color: #fff;
+}
+
+.avatar--sky {
+  background: var(--c-sky);
+  color: var(--c-navy);
+}
+
+.avatar--soft {
+  background: var(--info-bg);
+  color: var(--c-blue);
+}

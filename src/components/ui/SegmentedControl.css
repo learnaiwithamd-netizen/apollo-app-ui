@@ -1,0 +1,95 @@
+.segmented {
+  display: grid;
+  gap: 4px;
+  padding: 4px;
+  background: var(--c-track);
+  border-radius: 12px;
+}
+
+.segmented__item {
+  height: 40px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--c-muted);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.segmented__item.is-on {
+  background: var(--c-navy);
+  color: #fff;
+}
+
+.segmented--sm .segmented__item {
+  height: 38px;
+}
+
+.segmented--lg {
+  border-radius: 14px;
+}
+
+.segmented--lg .segmented__item {
+  height: 44px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+.choice-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.choice-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid var(--c-input-border);
+  background: var(--c-surface);
+  color: var(--c-navy);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.choice-chip.is-on {
+  border-color: var(--c-navy);
+  background: var(--c-navy);
+  color: #fff;
+}
+
+.choice-chips--sm {
+  flex-wrap: nowrap;
+  gap: 8px;
+  overflow-x: auto;
+}
+
+.choice-chips--sm .choice-chip {
+  height: 36px;
+  padding: 0 14px;
+}
+
+.choice-chip__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: var(--info-bg);
+  color: var(--c-blue);
+  font-size: 12px;
+}
+
+.choice-chip.is-on .choice-chip__count {
+  background: var(--c-sky);
+  color: var(--c-navy);
+}

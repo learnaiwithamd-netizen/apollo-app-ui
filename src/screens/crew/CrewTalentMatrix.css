@@ -1,0 +1,202 @@
+.talent-overall {
+  padding: 18px;
+  border-radius: 18px;
+  background: var(--c-navy);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.talent-overall__top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.talent-overall__grade {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--c-sky);
+  color: var(--c-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.talent-overall__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.talent-overall__muted {
+  font-size: 13px;
+  color: var(--c-on-navy-muted);
+}
+
+.talent-overall__points {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.talent-overall__of {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--c-on-navy-muted);
+}
+
+.talent-overall__sections {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.talent-mini {
+  padding: 10px;
+  border-radius: 12px;
+  background: var(--c-navy-raised);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.talent-mini__name {
+  font-size: 12px;
+  color: var(--c-on-navy-muted);
+}
+
+.talent-mini__score {
+  font-size: 17px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.talent-mini__max {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--c-on-navy-muted);
+}
+
+.talent-section__head {
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.talent-section__title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.talent-section__weight {
+  font-size: 13px;
+  color: var(--c-muted);
+}
+
+.talent-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 14px;
+}
+
+.talent-table__value-col {
+  width: 88px;
+}
+
+.talent-table__points-col {
+  width: 76px;
+}
+
+.talent-table th,
+.talent-table td {
+  padding: 11px 4px;
+  text-align: left;
+  vertical-align: baseline;
+}
+
+.talent-table th:first-child,
+.talent-table td:first-child {
+  padding-left: 16px;
+}
+
+.talent-table th:last-child,
+.talent-table td:last-child {
+  padding-right: 16px;
+}
+
+.talent-table thead th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background: var(--c-surface-sunken);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--c-muted);
+}
+
+.talent-table tbody tr {
+  border-top: 1px solid var(--c-divider);
+}
+
+.talent-table__criterion {
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.talent-table__value {
+  color: var(--c-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.talent-table .talent-table__points {
+  text-align: right;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.talent-table tfoot tr {
+  border-top: 1px solid #dde4f3;
+  background: var(--c-selected);
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.talent-table tfoot th,
+.talent-table tfoot .talent-table__points {
+  font-weight: 700;
+}
+
+.talent-tip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--sky-bg);
+  color: var(--sky-fg);
+  font-size: 14px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.talent-tip:hover {
+  color: var(--sky-fg);
+  background: #d4edf9;
+}
+
+.talent-tip__icon {
+  flex-shrink: 0;
+}

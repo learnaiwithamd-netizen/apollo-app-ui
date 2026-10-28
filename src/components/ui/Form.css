@@ -1,0 +1,129 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.field__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--c-navy);
+}
+
+.field__label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.field__label-row a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.field--sm {
+  gap: 4px;
+}
+
+.field--sm .field__label {
+  font-size: 13px;
+}
+
+/* Text inputs, selects and textareas. Default is the 48px mobile control. */
+.input {
+  height: 48px;
+  min-width: 0;
+  width: 100%;
+  padding: 0 12px;
+  border: 1px solid var(--c-input-border);
+  border-radius: 10px;
+  background: var(--c-surface);
+  color: var(--c-ink);
+  font-size: 16px;
+}
+
+.input--lg {
+  height: 50px;
+  padding: 0 14px;
+  border-radius: 12px;
+}
+
+.input--sm {
+  height: 42px;
+  padding: 0 10px;
+  font-size: 15px;
+}
+
+select.input--sm {
+  padding: 0 8px;
+}
+
+textarea.input {
+  height: auto;
+  padding: 10px 12px;
+  font-size: 15px;
+  line-height: 1.4;
+  resize: none;
+}
+
+textarea.input--sm {
+  padding: 10px;
+  resize: vertical;
+}
+
+.file-input {
+  font-size: 14px;
+  color: var(--c-muted);
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--c-blue);
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: 12px;
+  background: var(--c-bg);
+  color: var(--c-muted);
+}
+
+.search__input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--c-ink);
+  font-size: 16px;
+  outline: none;
+}
+
+.search:focus-within {
+  outline: 2px solid var(--c-sky);
+  outline-offset: 2px;
+}
+
+.search--sm {
+  height: 40px;
+  border-radius: 10px;
+}
+
+.search--sm .search__input {
+  font-size: 15px;
+}

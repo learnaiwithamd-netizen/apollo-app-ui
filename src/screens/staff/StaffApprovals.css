@@ -1,0 +1,67 @@
+.approval__head {
+  width: 100%;
+  padding: 14px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  color: var(--c-ink);
+  cursor: pointer;
+}
+
+.approval__head:disabled {
+  cursor: default;
+}
+
+.approval__text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.approval__what {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--c-navy);
+}
+
+.approval__who {
+  font-size: 13px;
+  color: var(--c-muted);
+}
+
+.approval__chevron {
+  flex-shrink: 0;
+  color: var(--c-subtle);
+}
+
+.approval__body {
+  padding: 0 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.approval__preview {
+  height: 150px;
+  border-radius: 12px;
+  border: 1px solid var(--c-preview-border);
+  background: var(--c-track);
+  color: var(--c-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.approval__actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}

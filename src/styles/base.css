@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--c-ink);
+  background: var(--c-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--c-blue);
+}
+
+a:hover {
+  color: var(--c-navy);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--c-subtle);
+}
+
+:focus-visible {
+  outline: 2px solid var(--c-sky);
+  outline-offset: 2px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.text-muted {
+  color: var(--c-muted);
+}
+
+.text-ok {
+  color: var(--ok-fg);
+}
+
+.text-warn {
+  color: var(--warn-fg);
+}
+
+.text-bad {
+  color: var(--bad-fg);
+}
+
+.text-info {
+  color: var(--info-fg);
+}
+
+/* Round 44px icon-only button on a light grey fill (back, close). */
+.icon-button {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--c-bg);
+  color: var(--c-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: var(--c-track);
+  color: var(--c-navy);
+}

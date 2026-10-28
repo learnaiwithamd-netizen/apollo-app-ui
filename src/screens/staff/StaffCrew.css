@@ -1,0 +1,81 @@
+.crew-summary {
+  padding: 16px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.crew-summary__who {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.crew-summary__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.crew-summary__name {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--c-navy);
+}
+
+.crew-summary__sub {
+  font-size: 14px;
+  color: var(--c-muted);
+}
+
+.crew-summary__joining {
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--info-bg);
+  color: var(--c-blue);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.crew-summary__joining svg {
+  flex-shrink: 0;
+}
+
+.crew-summary__actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.crew-summary__action {
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.staff-crew__section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.staff-crew__reminded {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ok-fg);
+}
+
+.staff-crew__rank {
+  font-size: 13px;
+  color: var(--c-muted);
+}
+
+.staff-crew__console {
+  font-size: 15px;
+}
