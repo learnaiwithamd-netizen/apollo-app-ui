@@ -29,7 +29,7 @@ export function SignIn() {
 
       <div className="sign-in__brand">
         <img src={logo} alt="Apollo" width={177} height={54} />
-        <p className="sign-in__tagline">Crew &amp; Shore Staff</p>
+        <p className="sign-in__tagline">Maritime</p>
       </div>
 
       <form className="sign-in__form" onSubmit={submit}>
