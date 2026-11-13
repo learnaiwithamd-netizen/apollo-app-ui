@@ -2,6 +2,8 @@ import type { ReactNode } from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import logo from '../../assets/apollo-logo.png';
 import { cx } from '../../lib/cx';
+import { isEmbedded } from '../../lib/overviewReturn';
+import { DemoBar } from '../demo/DemoBar';
 import { paths } from '../../routes';
 import { Avatar } from '../ui/Avatar';
 import { Icon, type IconName } from '../ui/Icon';
@@ -19,6 +21,7 @@ const navItems: { to: string; label: string; icon: IconName }[] = [
 export function ConsoleLayout() {
   return (
     <div className="console">
+      {!isEmbedded() && <DemoBar />}
       <header className="console__bar">
         <img src={logo} alt="Apollo" width={118} height={36} className="console__logo" />
         <span aria-hidden="true" className="console__divider" />

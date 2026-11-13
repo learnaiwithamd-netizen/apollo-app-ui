@@ -22,6 +22,7 @@ import { StaffHome } from './screens/staff/StaffHome';
 import { ConsoleCirculars } from './screens/console/ConsoleCirculars';
 import { ConsoleFlights } from './screens/console/ConsoleFlights';
 import { ConsolePlanning } from './screens/console/ConsolePlanning';
+import { Overview } from './screens/overview/Overview';
 import { ConsoleTraining } from './screens/console/ConsoleTraining';
 import { paths } from './routes';
 
@@ -50,6 +51,8 @@ export function App() {
         <Route path={paths.staff.approvals} element={<StaffApprovals />} />
         <Route path={paths.staff.crew} element={<StaffCrew />} />
       </Route>
+
+      <Route path={paths.overview} element={<Overview />} />
 
       <Route path="/console" element={<ConsoleLayout />}>
         <Route index element={<Navigate to={paths.console.planning} replace />} />

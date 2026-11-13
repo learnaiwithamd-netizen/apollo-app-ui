@@ -1,0 +1,39 @@
+.demo-bar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--demo-bar-h);
+  padding: env(safe-area-inset-top, 0px) 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--c-navy);
+  color: var(--c-on-navy-muted);
+}
+
+.demo-bar__back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 32px;
+  padding: 0 14px 0 10px;
+  border-radius: 999px;
+  background: var(--c-on-navy);
+  color: var(--c-navy);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.demo-bar__back:hover {
+  background: var(--sky-bg);
+  color: var(--c-navy);
+}
+
+.demo-bar__note {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
