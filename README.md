@@ -19,6 +19,7 @@ On a desktop browser the mobile apps show in a 390×844 phone frame; on a phone 
 | Area | Route |
 | --- | --- |
 | Sign in (seafarer or shore staff) | `/` |
+| Leadership overview (value proposition, links into the demo) | `/overview` |
 | Crew · Home | `/crew` |
 | Crew · Schedule | `/crew/schedule` |
 | Crew · Pre-joining, Training, Joining, Onboard | `/crew/schedule/pre-joining`, `/training`, `/joining`, `/onboard` |
@@ -30,6 +31,8 @@ On a desktop browser the mobile apps show in a 390×844 phone frame; on a phone 
 | Web console · Crew planning, Flights, Training, Circulars | `/console/planning`, `/console/flights`, `/console/training`, `/console/circulars` |
 
 Route paths live in `src/routes.ts`.
+
+Every demo screen has a "Back to overview" bar (`src/components/demo/DemoBar.tsx`). It returns to the overview section the viewer left from, and is hidden when a screen is shown as a preview inside the overview.
 
 ## Code layout
 

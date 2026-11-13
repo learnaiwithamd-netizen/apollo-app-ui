@@ -68,6 +68,10 @@ export function SignIn() {
             Planning on a desktop? <Link to={paths.console.planning}>Open the web console</Link>
           </p>
         )}
+
+        <p className="sign-in__hint">
+          New to Apollo? <Link to={paths.overview}>Read the overview</Link>
+        </p>
       </form>
 
       <p className="sign-in__help">Need help signing in? Call the crewing desk</p>

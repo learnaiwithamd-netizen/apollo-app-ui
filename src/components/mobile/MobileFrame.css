@@ -25,6 +25,11 @@
   box-shadow: 0 24px 60px rgba(20, 20, 54, 0.18), 0 0 0 1px rgba(20, 20, 54, 0.06);
 }
 
+.device-stage--with-bar {
+  min-height: calc(100vh - var(--demo-bar-h));
+  min-height: calc(100dvh - var(--demo-bar-h));
+}
+
 @media (max-width: 480px) {
   .device-stage {
     display: block;
@@ -39,5 +44,12 @@
     height: 100dvh;
     border-radius: 0;
     box-shadow: none;
+  }
+
+  /* The demo bar already clears the top safe area. */
+  .device-stage--with-bar .device {
+    --status-bar: 0px;
+    height: calc(100vh - var(--demo-bar-h));
+    height: calc(100dvh - var(--demo-bar-h));
   }
 }
